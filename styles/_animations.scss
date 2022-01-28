@@ -1,0 +1,45 @@
+// Slide leftRight
+
+@keyframes leftRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-1437px);
+    }
+}
+
+// Slide rightLeft
+
+@keyframes rightLeft {
+    0% {
+        transform: translateX(0);
+    }
+    
+    100% {
+        transform: translateX(1041px);
+    }
+}
+
+// Slide for mobile 
+
+@keyframes leftRight-mobile {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-1023px);
+    }
+}
+
+@keyframes rightLeft-mobile {
+    0% {
+        transform: translateX(0);
+    }
+    
+    100% {
+        transform: translateX(725px);
+    }
+}

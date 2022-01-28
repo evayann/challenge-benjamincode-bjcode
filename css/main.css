@@ -1,0 +1,167 @@
+@keyframes leftRight {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-1437px); } }
+
+@keyframes rightLeft {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(1041px); } }
+
+@keyframes leftRight-mobile {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-1023px); } }
+
+@keyframes rightLeft-mobile {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(725px); } }
+
+/* GT Flex */
+@font-face {
+  font-family: "gtfr";
+  src: url("../assets/fonts/mateifont/GT-Flexa-Regular-Trial.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "gtfri";
+  src: url("../assets/fonts/mateifont/GT-Flexa-Regular-Italic-Trial.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "gtfxebo";
+  src: url("../assets/fonts/mateifont/GT-Flexa-X-Compressed-Bold-Trial.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "gtfxebl";
+  src: url("../assets/fonts/mateifont/GT-Flexa-X-Compressed-Black-Trial.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  height: 100%;
+  background-color: #000431;
+  color: #fff500; }
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  white-space: nowrap; }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 7px solid #fff500;
+  margin: 2.5em 3.2em; }
+
+header .bj-code {
+  animation: leftRight 30s infinite linear; }
+
+header h1 {
+  font: 9.25rem "gtfxebl", sans-serif;
+  border: 2px 0 2px 0;
+  border-color: #fff500; }
+
+header .bj-code > h1:nth-child(2n) {
+  color: transparent;
+  -webkit-text-stroke: 2px #fff500; }
+
+header .fstack {
+  border-top: 7px solid #fff500;
+  border-bottom: 7px solid #fff500;
+  float: right;
+  animation: rightLeft 25s infinite linear; }
+
+header h2 {
+  font: 3.5rem "gtfxebl", sans-serif; }
+
+header .fstack > h2:nth-child(2n+1) {
+  color: transparent;
+  -webkit-text-stroke: 1px #fff500; }
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 2em; }
+  @media screen and (max-width: 1200px) {
+    .content {
+      flex-direction: column-reverse;
+      padding: 2em; } }
+  .content .picture-content {
+    position: relative; }
+    .content .picture-content > img {
+      transform: translateY(36px); }
+      @media screen and (max-width: 1200px) {
+        .content .picture-content > img {
+          width: 75%; } }
+    .content .picture-content .circle {
+      position: absolute;
+      background-color: #fff500;
+      border-radius: 50%; }
+    .content .picture-content > .big-circle {
+      z-index: -5;
+      left: 20px;
+      top: 50px;
+      width: 500px;
+      height: 500px; }
+      @media screen and (max-width: 1200px) {
+        .content .picture-content > .big-circle {
+          left: 60px;
+          top: 70px;
+          width: 200px;
+          height: 200px; } }
+    .content .picture-content > .little-circle {
+      z-index: 5;
+      left: 60%;
+      bottom: 10%;
+      width: 60px;
+      height: 60px; }
+      @media screen and (max-width: 1200px) {
+        .content .picture-content > .little-circle {
+          width: 20px;
+          height: 20px; } }
+  .content main {
+    font: 1.1rem "gtfr", sans-serif;
+    width: 370px;
+    max-width: 650px;
+    line-height: 1.65em; }
+    @media screen and (max-width: 1200px) {
+      .content main {
+        width: 100%; } }
+    .content main p .italic {
+      font-family: "gtfri"; }
+    .content main p .underline {
+      text-decoration: underline; }
+    .content main .mail {
+      display: flex;
+      align-items: center;
+      column-gap: 10px; }
+      .content main .mail-link {
+        color: #fff500;
+        text-decoration: none; }
+      .content main .mail-link:hover {
+        text-decoration: underline; }
+      .content main .mail-icon {
+        width: 42px;
+        height: 42px;
+        fill: #fff500; }
